@@ -1,0 +1,55 @@
+<div class="d-flex mb-4 justify-content-between text-center align-items-center">
+  <h1>Edit Product</h1>
+  <a href="/product" class="btn btn-secondary">Back</a>
+</div>
+<form method="post" class="bg-white p-3 rounded">
+  <div class="mb-3">
+    <label for="inputName" class="form-label font-weight-bold">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="inputName"
+      aria-describedby="textHelp"
+      placeholder="Enter name product"
+      name="title"
+      value="<%= data.product.title %>"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="inputPrice" class="form-label font-weight-bold">Price</label>
+    <input
+      type="number"
+      class="form-control"
+      id="inputPrice"
+      aria-describedby="textHelp"
+      placeholder="Enter price product"
+      name="price"
+      min="0"
+      max="99999"
+      value="<%= data.product.price %>"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="inputCategory" class="form-label font-weight-bold"
+      >Category</label
+    >
+    <select class="form-control" id="inputCategory" name="category" required>
+      <% data.categories.forEach((category, index) => { %>
+      <option value="<%= category.title %>" <%= data.product.category == category.title ? 'selected' : '' %>><%= category.title %></option>
+      <% }); %>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="inputSupplier" class="form-label font-weight-bold"
+      >Supplier</label
+    >
+    <select class="form-control" id="inputSupplier" name="supplier" required>
+      <% data.suppliers.forEach((supplier, index) => { %>
+      <option value="<%= supplier.title %>" <%= data.product.supplier == supplier.title ? 'selected' : '' %> ><%= supplier.title %></option>
+      <% }); %>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,47 @@
+<div class="d-flex mb-4 justify-content-between text-center align-items-center">
+  <h1>Add Users</h1>
+  <a href="/user" class="btn btn-secondary">Back</a>
+</div>
+<form method="post" class="bg-white p-3 rounded">
+  <div class="mb-3">
+    <label for="inputName" class="form-label font-weight-bold">Full Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="inputName"
+      aria-describedby="textHelp"
+      placeholder="Enter full name"
+      name="name"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="inputUsername" class="form-label font-weight-bold"
+      >Username</label
+    >
+    <input
+      type="text"
+      class="form-control"
+      id="inputUsername"
+      aria-describedby="textHelp"
+      placeholder="Enter username"
+      name="username"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="inputPassword" class="form-label font-weight-bold"
+      >Password</label
+    >
+    <input
+      type="text"
+      class="form-control"
+      id="inputPassword"
+      aria-describedby="textHelp"
+      placeholder="Enter password"
+      name="password"
+      required
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
