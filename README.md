@@ -1,8 +1,14 @@
-MARCHELINO BENEDIKTUS LEINTAN
-MATTHEW ALEXANDER
-GILANG SAMUDRO
+# Panduan Menjalankan APK
 
--- TUTORIAL RUNING APK --
-- UNTUK ME RUN APK KETIK PADA TERMINAL "npm install" UNTUK MENGINSTAL DEPEDENSI YANG DIPERLUKAN
-- SETELAH MENGINSTALL KETIK PADA TERMINAL "npm run dev" UNTUK MENJALANKAN APK
--- ------------------------------------------------------------------------------------------------ --
+**Author**: 
+- Marchelino Benediktus Leintan
+- Matthew Alexander
+- Gilang Samudro
+
+## Langkah-langkah Menjalankan APK
+
+1. **Instalasi Dependencies:**
+   Untuk menginstal dependensi yang diperlukan, ketik perintah berikut pada terminal: "npm install"
+
+2. **Menjalankan APK:**
+Setelah menginstal dependensi, jalankan APK dengan mengetik perintah berikut pada terminal:"npm run dev"
